@@ -5,10 +5,49 @@ body {
   margin: 0;
   overflow: hidden;
   font-family: Roboto, sans-serif;
+  display: flex;
+  flex-direction: column;
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #eeeeee;
+  margin-top: auto;
+}
+
+.left-links {
+  display: flex;
+  justify-items: space-between;
+  align-items: center;
+  gap: 10px;
+  padding-left: 16px;
+}
+
+.right-links {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 10px;
+  padding-right: 16px;
 }
 
 img {
   width: 600px;
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: auto;
 }
 
 button {
@@ -24,4 +63,14 @@ input {
   padding: 8px 24px;
   width: 400px;
   margin-bottom: 16px;
+}
+
+/* Remove Bullet Points and Underlines on Links */
+a {
+  text-decoration: none;
+  color: grey;
+}
+
+ul {
+  list-style: none;
 }
